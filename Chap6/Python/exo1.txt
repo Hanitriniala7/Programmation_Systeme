@@ -1,0 +1,29 @@
+a-la capacité du disque:
+
+Capacité= cylindres x (2xfaces)x secteursx taille du secteurs
+Capacité=1000x4x60x1024=245760000 octets
+
+on sait que 1Mo=1024 octets d'ou Capacité(Mo)=245760000/(1024)^2
+Capacité(Mo)=234.375 Mo
+
+b-la position du 300 octets du 45 secteurs de 350 cylindres dans la face 2 du premier plateau:
+
+N1=nombres de secteurs avant=350x4x60 (car chaque cylindre a 60 secteurs/face et on a 2 faces)
+N2=N1+ nombre de secteur dans cette cylindres (2x60)
+N3=N2+45(car on entre dans le secteur 45)
+N4=N3x1024(chaque secteur possède 1024octets)
+N5=N4+300
+
+position=N5=86 185 260 (position en octets)
+
+c-position et secteur ou se trouve l’octet numéro 78000000:
+N1=78000000/1024=76171 (nombre de secteurs)
+N2=cylindres=N1/240=371 ( chaque cylindre possede 240 secteurs)
+
+reste=N1-(N2x240)=91
+face= reste/60=1
+secteur=reste%60=31
+
+d'ou cylindres=371
+     face=1
+     sceteur=31
