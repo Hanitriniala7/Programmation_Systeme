@@ -31,7 +31,5 @@ int main()
       write(tube[1],message,strlen(message));
     }
 
-     //dans programmefils prendre les variables de l'environnement getenv et atoi et lire le message du père 
-     // exo3.py il y a un probleme sur le message en byte envoye par python vers C
-     //bonne nuit !!!!!
+    return(0);
 }
